@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css media queries</title>
+        <style>
+            .common{
+                width:300px;
+                height:300px;
+            }
+            @media only screen and (min-width:0px) and (max-width:575px){
+                .xs{
+                    background: red;
+                }
+            }
+            @media only screen and (min-width:576px) and (max-width:767px){
+                .sm{
+                    background: blue;
+                    border-radius:300px;
+                }
+            }
+            @media only screen and (min-width:768px) and (max-width:991px){
+                .md{
+                    width:500px;
+                    height:500px;
+                    background: purple;
+                }
+            }
+            @media only screen and (min-width:992px) and (max-width:1199px){
+                .xl{
+                    width:100%;
+                    height:700px;
+                    background: black;
+                }
+            }
+            @media only screen and (min-width:1200px) and (max-width:1399px){
+                .xxl{
+                    width:600px;
+                    height:600px;
+                    background: pink;
+                    border-radius: 600px;
+                }
+            }
+            @media only screen and (min-width:1400px){
+                .xxl{
+                    width:800px;
+                    height:800px;
+                    background: purple;
+                    border-radius: 800px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="xs common"></div>      
+        <div class="sm common"></div>          
+        <div class="md"></div>      
+        <div class="xl"></div>      
+        <div class="xxl"></div>      
+    </body>
+</html>
